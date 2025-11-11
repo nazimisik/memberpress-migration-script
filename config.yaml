@@ -1,0 +1,42 @@
+# MemberPress Migration Configuration Example
+# Copy this file to config.yaml and update with your actual values
+
+# Product/Membership ID Mappings
+# Map old product/membership IDs from source site to new IDs on destination site
+mappings:
+  products:
+    "old_product_id_1": "new_product_id_1" 
+    "old_product_id_2": "new_product_id_2"  
+    "old_product_id_3": "new_product_id_3"  
+    "old_product_id_4": "new_product_id_4"  
+    "old_product_id_5": "new_product_id_5"  
+    "old_product_id_6": "new_product_id_6"  
+  
+  # Payment Gateway ID Mappings
+  # Map old gateway IDs to new gateway IDs
+  gateways:
+    "old_stripe_gateway_id": "new_stripe_gateway_id"    
+    "old_paypal_gateway_id": "new_paypal_gateway_id"    
+    "old_manual_gateway_id": "new_manual_gateway_id"    
+
+# Starting ID Numbers
+# New sequential IDs will start from these values
+# Set these to avoid conflicts with existing data on destination site
+start_ids:
+  members: 100          # First member ID
+  subscriptions: 200    # First subscription ID
+  transactions: 300     # First transaction ID
+
+# Optional: Custom Column Mappings
+# Uncomment and modify if your CSV structure differs from defaults
+# If omitted, the tool uses sensible defaults
+
+# product_columns:
+#   members: ["memberships", "inactive_memberships"]
+#   subscriptions: ["product_id", "membership_id", "product_name", "membership", "product"]
+#   transactions: ["product_id", "membership_id", "product_name", "membership", "product"]
+
+# gateway_columns:
+#   subscriptions: ["gateway_id", "gateway"]
+#   transactions: ["gateway_id", "gateway"]
+
