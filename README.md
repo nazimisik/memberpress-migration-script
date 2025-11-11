@@ -206,7 +206,7 @@ GPLv3 License with love - See LICENSE file for details
 
 ## Author
 
-@nazim.isik
+@nazimisik
 
 ## Support
 
